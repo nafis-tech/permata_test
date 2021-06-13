@@ -10,3 +10,4 @@ ReactDOM.render(
 )
 
 //dari app -> index.js -> index.html
+// dari TodoItem -> app.js

@@ -1,10 +1,14 @@
 import React from "react"
 
+//import todoitem
+import ToDoItem from "./component/todoItem"
+
 class App extends React.Component {
     render() {
         return (
             <div>
                 <h1>To Do List</h1>
+                <ToDoItem />
             </div>
         
         )
