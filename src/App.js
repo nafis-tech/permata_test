@@ -1,20 +1,18 @@
-import React from "react"
-
-//import todoitem
-import ToDoItem from "./component/todoItem"
+import React from 'react'
+import { Switch, Route } from 'react-router-dom'
+import Home from './pages/Home';
+import Login from './pages/Login';
 
 class App extends React.Component {
-    render() {
-        return (
-            <div>
-                <h1>To Do List</h1>
-                <ToDoItem />
-            </div>
-        
-        )
-    }
-}
-export default App
 
-//klo mau import lagi, di apps di masukin navbar (klo mau ngasih navbar)
-//inget return harus cuma ada 1 kompnent saja
+  render() {
+    return (
+      <Switch>
+        <Route path="/" component={Home} exact />
+        <Route path="/login" component={Login} exact />
+      </Switch>
+    )
+  }
+}
+
+export default App;

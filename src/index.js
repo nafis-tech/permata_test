@@ -1,13 +1,12 @@
-import React from 'react'
-import ReactDom from 'react-dom'
-
-//import file.js
-import App from './app'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css' 
+import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.render(
-    <App />,
-    document.getElementById('root')
-)
-
-//dari app -> index.js -> index.html
-// dari TodoItem -> app.js
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById('root')
+);
